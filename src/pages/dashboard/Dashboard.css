@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(63, 164, 197);
+  text-align: center;
+  height:10vh;
+  /* padding: 10px; */
+  font-size: 20px;
+  color: black;
+}
+
+.avatarImg{
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.loginUserName {
+  display: flex;
+  float: right;
+  font-size: medium;
+  color: red;
+}
+/* nav ul {
+    list-style-type: none;
+    padding: 0;
+  } */
+
+.mainSection{
+height:80vh;
+}
+
+.sidebar{
+  float: left;
+  width: 20%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+}
+
+.sectionArticle {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height:100%;
+}
+
+.footer{
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  height: 10vh;
+}
+

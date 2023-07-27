@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Pooja",
+        "email": "pooja@gmail.com",
+        "password": "pooja@123"
+    },
+    {
+        "name": "Nisha",
+        "email": "nisha@gmail.com",
+        "password": "nisha@123"
+    },
+    {
+        "name": "Bharat",
+        "email": "bharat@gmail.com",
+        "password": "bharat@123"
+    }
+]
