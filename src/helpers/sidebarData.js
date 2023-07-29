@@ -1,11 +1,12 @@
 import React from 'react'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleIcon from '@mui/icons-material/People';
+
 export const  sidebarData=[
     {
         title:"Dashboard",
         icon:<DashboardIcon/>,
-        link:'/'
+        link:'/dashboard'
     },
     {
         title:"Products",
@@ -15,6 +16,11 @@ export const  sidebarData=[
         title:"Users",
         icon:<PeopleIcon/>,
         link:'/users'
+    },
+    {
+        title:"Logout",
+        // icon:<LogoutIcon/>,
+        link:'/login'
     },
 ] 
  
