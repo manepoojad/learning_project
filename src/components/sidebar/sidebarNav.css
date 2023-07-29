@@ -1,0 +1,27 @@
+.sidebarList {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    padding: 0;
+}
+   
+.sidebarList .anchorTagSideBarRow {
+    height: 100%;
+    width: 50px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+
+.sidebarList .anchorTagSideBarRow:hover {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.sidebarIcon {
+    margin: 10px;
+    margin-left: 0px;
+}

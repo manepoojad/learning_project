@@ -1,0 +1,47 @@
+.postLoginContainer{
+    
+}
+
+.postLoginContainerHeader {
+    background-color: rgb(63, 164, 197);
+    text-align: center;
+    height: 10vh;
+    font-size: 20px;
+    color: black;
+}
+
+.postLoginContainerSection {
+    height: 80vh;
+}
+
+.postLoginContainerSidebarNav{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+}
+
+.postLoginContainerContent {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.postLoginContainerFooter{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    height: 10vh;
+}
+
+.postLoginContainerFooterText{
+    margin: 0px;
+    font-size: 16px;
+}
+
+
+

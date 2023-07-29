@@ -1,14 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Routing from './routing/Routing';
+// import DashboardLoginRouting from './container/DashboardLoginRouting';
+import PostLoginContainer from './container/PostLoginContainer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
 
   return (
     <div className="App">
-      <Routing />
+      <BrowserRouter>
+        {/* <DashboardLoginRouting/> */}
+        <PostLoginContainer />
+      </BrowserRouter>
     </div>
   );
 }
