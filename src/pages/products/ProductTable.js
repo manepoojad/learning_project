@@ -44,8 +44,7 @@ function Users() {
             <th>Category</th>
             <th>Image</th>
             <th>Price</th>
-            <th style={{width:"40px"}}>Count</th>
-            <th style={{width:"30px"}}>Rate</th>
+            <th style={{width:"80px"}}>Rating</th>
             <th style={{width:"40px"}}>Action</th>
           </tr>
         </thead>
@@ -63,8 +62,7 @@ function Users() {
                     <td>{item.category}</td>
                     <td><img src={item.image} height={50} width={50}/></td>
                     <td>{item.price}</td>
-                    <td>{item.rating.count}</td>
-                    <td>{item.rating.rate}</td>
+                    <td><b>count:</b>{item.rating.count}, <b>rate:</b>{item.rating.rate}</td>
                     <td>
                       <button type="button" onClick={() => handleEditProductData(item)}>Edit</button>
                     </td>

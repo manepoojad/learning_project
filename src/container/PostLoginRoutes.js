@@ -4,6 +4,7 @@ import Dashboard from '../pages/home/Dashboard'
 import Products from '../pages/products/Products'
 import Users from '../pages/users/Users'
 import EditProduct from '../pages/products/EditProduct'
+import EditUsers from '../pages/users/EditUsers'
 function PostLoginRoutes() {
   return (
     <Routes>
@@ -11,6 +12,7 @@ function PostLoginRoutes() {
       <Route path='/products' element={<Products />} />
       <Route path='/users' element={<Users />} />
       <Route path="/editProduct/:id" element={<EditProduct />} />
+      <Route path="/editUsers/:id" element={<EditUsers />} />
     </Routes>
   )
 }

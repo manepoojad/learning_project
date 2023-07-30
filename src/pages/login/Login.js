@@ -47,6 +47,7 @@ function Login() {
             <div>
                 <label>Email:</label>
                 <input
+                    className='loginFormFieldInput'
                     type='email'
                     name='email'
                     value={loginData.email}
@@ -57,6 +58,7 @@ function Login() {
             <div>
                 <label>Password:</label>
                 <input
+                    className='loginFormFieldInput'
                     type='password'
                     name='password'
                     value={loginData.password}

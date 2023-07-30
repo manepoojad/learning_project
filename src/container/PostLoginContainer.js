@@ -7,7 +7,7 @@ function PostLoginContainer() {
     return (
         <div className='postLoginContainer'>
             <header className='postLoginContainerHeader'>
-                This is Header
+                <p style={{margin:"0px"}}>Header</p>
             </header>
             <section className='postLoginContainerSection'>
                 <nav className='postLoginContainerSidebarNav'>

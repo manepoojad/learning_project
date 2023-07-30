@@ -27,6 +27,55 @@ th{
     width: 100px;
 }
 
-.tableDescription{
-    width: 40px;
+.productPage{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    overflow: auto;
 }
+
+.productCard{
+    display: flex;
+    flex-direction:row ;
+    /* flex-wrap:wrap; */
+    border:1px solid black;
+    background-color: lightgoldenrodyellow;
+    margin: 10px;
+    
+}
+
+.productDetail{
+    display: flex;
+    flex-direction: row;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.productLabel{
+    font-weight: bold;
+}
+
+.productDescription{
+    display: flex;
+}
+
+.productPrice{
+    margin:10px;
+    display: flex;
+}
+
+.productImageTitle{
+    margin: 10px;
+    width: 300px;
+}
+
+@media screen and (max-width: 520px) {
+    .productDetail,.productCard{
+        display: flex;
+        flex-direction: column;
+    }
+  }

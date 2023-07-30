@@ -16,7 +16,7 @@
     color: black;
 }
 
-.sidebarList .anchorTagSideBarRow:hover {
+.anchorTagSideBarRow:hover {
     cursor: pointer;
     margin: 10px;
 }
@@ -24,4 +24,9 @@
 .sidebarIcon {
     margin: 10px;
     margin-left: 0px;
+}
+
+.sidebarTitle{
+    color:black;
+    font-size: 15px;
 }
