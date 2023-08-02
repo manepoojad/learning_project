@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './editProduct.css'
 import { useLocation, useParams } from 'react-router-dom'
 
 function EditProduct() {
@@ -11,27 +12,28 @@ function EditProduct() {
         title: "",
         description: "",
         price: "",
-        rating: {
-            count: "",
-            rate: ""
-        },
+        count: "",
+        rate: "",
         category: "",
         image: ""
     })
 
     useEffect(() => {
         console.log(location)
-        const productDataFromLocation = location.state.projectData
+        const productDataFromLocation = location.state.productData
+        console.log(productDataFromLocation)
         const newProductData = {
             id: productDataFromLocation.id,
             title: productDataFromLocation.title,
             description: productDataFromLocation.description,
             category: productDataFromLocation.category,
             price: productDataFromLocation.price,
-            image: <img src={productDataFromLocation.image} height={50} width={50} />,
+            image: productDataFromLocation.image,
             count: productDataFromLocation.rating && productDataFromLocation.rating.count,
             rate: productDataFromLocation.rating && productDataFromLocation.rating.rate,
         }
+        console.log(newProductData)
+        setProductData(newProductData)
 
     }, [])
 
@@ -45,21 +47,24 @@ function EditProduct() {
     }
 
     return (
-        <div>
-            <form>
-                <div>
-                    <label>Id:</label>
+        <div className='editProductFormWrapper'>
+            <form className='editProductForm'>
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Id:</label>
                     <input
+                        className='productFormFieldInput'
                         type='number'
                         name='id'
                         value={productData.id}
                         placeholder='Enter Product Id'
+                        disabled
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Title:</label>
-                    <input
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Title:</label>
+                    <textarea
+                        className='productFormFieldInput'
                         type='text'
                         name='title'
                         value={productData.title}
@@ -67,9 +72,10 @@ function EditProduct() {
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Description:</label>
-                    <input
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Description:</label>
+                    <textarea
+                        className='productFormFieldInput'
                         type='text'
                         name='description'
                         value={productData.description}
@@ -77,9 +83,10 @@ function EditProduct() {
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Price:</label>
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Price:</label>
                     <input
+                        className='productFormFieldInput'
                         type='number'
                         name='price'
                         value={productData.price}
@@ -87,9 +94,10 @@ function EditProduct() {
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Category:</label>
-                    <input
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Category:</label>
+                    <textarea
+                        className='productFormFieldInput'
                         type='text'
                         name='category'
                         value={productData.description}
@@ -97,9 +105,10 @@ function EditProduct() {
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Image:</label>
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Image:</label>
                     <input
+                        className='productFormFieldInput'
                         type='image'
                         name='image'
                         value=<img src={productData.image} height={50} width={50} />
@@ -107,22 +116,24 @@ function EditProduct() {
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Count:</label>
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Count:</label>
                     <input
+                        className='productFormFieldInput'
                         type='number'
                         name='count'
-                        value={productData.rating.count}
+                        value={productData.count}
                         placeholder='Enter Product Count'
                         onChange={e => handleInputChange(e)}
                     />
                 </div>
-                <div>
-                    <label>Rate:</label>
+                <div className='productFormField'>
+                    <label className='productFormFieldLabel'>Rate:</label>
                     <input
+                        className='productFormFieldInput'
                         type='number'
                         name='rate'
-                        value={productData.rating.rate}
+                        value={productData.rate}
                         placeholder='Enter Product Rate'
                         onChange={e => handleInputChange(e)}
                     />

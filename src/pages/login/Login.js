@@ -42,10 +42,10 @@ function Login() {
     }
 
     return (
-        <div>
-            <h3>Login Page</h3>
-            <div>
-                <label>Email:</label>
+        <div className='loginFormWrapper'>
+        <form className='loginForm'>
+            <div className='loginFormField'>
+                <label className='loginFormLabel'>Email:</label>
                 <input
                     className='loginFormFieldInput'
                     type='email'
@@ -55,8 +55,8 @@ function Login() {
                     onChange={e => handleInputChange(e)}
                 />
             </div>
-            <div>
-                <label>Password:</label>
+            <div className='loginFormField'>
+                <label className='loginFormLabel'>Password:</label>
                 <input
                     className='loginFormFieldInput'
                     type='password'
@@ -69,6 +69,7 @@ function Login() {
             <div>
                 <button type='button' onClick={() => handleLogin()}>Login</button>
             </div>
+        </form>
         </div>
     )
 }

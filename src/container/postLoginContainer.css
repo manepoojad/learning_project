@@ -3,11 +3,11 @@
 } */
 
 .postLoginContainerHeader {
-    background-color: rgb(63, 164, 197);
+    background-color: rgb(100, 149, 165);
     text-align: center;
     height: 10vh;
-    font-size: 20px;
-    color: black;
+    color: white;
+    
 }
 
 .postLoginContainerSection {
@@ -18,7 +18,7 @@
     float: left;
     width: 20%;
     height: 100%;
-    background:lightblue;
+    background:#415161;;
     padding: 20px;
 }
 
@@ -26,21 +26,20 @@
     float: left;
     padding: 20px;
     width: 80%;
-    background-color: #f1f1f1;
+    background-color:white;
     height: 100%;
 }
 
 .postLoginContainerFooter{
-    background-color: lightblue;
+    background-color: rgb(132, 198, 220);
     padding: 10px;
     text-align: center;
-    color: black;
     height: 10vh;
 }
 
 .postLoginContainerFooterText{
     margin: 0px;
-    font-size: 16px;
+    color: white;
 }
 
 

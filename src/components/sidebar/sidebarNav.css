@@ -24,9 +24,10 @@
 .sidebarIcon {
     margin: 10px;
     margin-left: 0px;
+    color:white
 }
 
 .sidebarTitle{
-    color:black;
+    color:white;
     font-size: 15px;
 }

@@ -3,74 +3,92 @@
     border-collapse: collapse;
     width: 100%;
     height: 100%;
-    font-family:'Times New Roman', Times, serif;
     overflow: auto;
 }
 
 .productTableWrapper table{
     table-layout: fixed;
-    border-collapse: collapse;
-    width: 100%;
+        border-collapse: collapse;
+        width: 100%;
 }
 
 td {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     margin: 4px;  
     width: 100px;  
 }
 
 th{
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     margin: 4px;
     width: 100px;
 }
 
 .productPage{
     display:flex;
-    flex-direction: column;
+    flex-wrap:wrap;
     width:100%;
     height: 100%;
     overflow: auto;
+    background-color:lightcyan;
 }
 
 .productCard{
     display: flex;
-    flex-direction:row ;
-    /* flex-wrap:wrap; */
+    flex-direction:column;
     border:1px solid black;
-    background-color: lightgoldenrodyellow;
-    margin: 10px;
-    
+    margin: 40px;
+    border-radius: 20px;
+    height: fit-content;
+    width: 450px;
+    background-color:white;
 }
 
 .productDetail{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     font-family:'Times New Roman', Times, serif;
-    margin: 10px;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    width: 400px;
+
 }
+
+.productDescription{
+    padding-top: 45px;
+
+}
+
+.read-more-link{
+    color:cornflowerblue;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
 
 .productLabel{
     font-weight: bold;
 }
 
-.productDescription{
-    display: flex;
-}
-
 .productPrice{
-    margin:10px;
-    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: lightblue;
+    cursor: pointer;
+    
 }
 
 .productImageTitle{
-    margin: 10px;
-    width: 300px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    
 }
 
 @media screen and (max-width: 520px) {

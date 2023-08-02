@@ -18,7 +18,7 @@ function PostLoginContainer() {
                 </div>
             </section>
             <footer className='postLoginContainerFooter'>
-                <p className='postLoginContainerFooterText'>Footer</p>
+                <p className='postLoginContainerFooterText'style={{margin:"0px"}}>Footer</p>
             </footer>
         </div>
     )
